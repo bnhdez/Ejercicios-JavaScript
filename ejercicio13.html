@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+    <script>
+        let monto = Number(prompt("Ingrese el monto de compra"))
+        let descuento
+        let total
+        let porcentaje
+
+        if(monto >= 0){
+            if(monto <= 500){
+                porcentaje = "Descuento de 0%"
+                descuento = 0
+            }else if(monto >= 500.01 && monto <= 1000){
+                descuento = monto*0.05
+                porcentaje = "Descuento de 5%"
+            }else if(monto >= 1000.01 && monto <= 7000){
+                descuento = monto*0.11
+                porcentaje = "Descuento de 11%"
+            }else if(monto >= 7000.01 && monto <= 15000){
+                descuento = monto*0.18
+                porcentaje = "Descuento de 18%"
+            }else{
+                descuento = monto*0.25
+                porcentaje = "Descuento de 25%"
+            }
+            total = monto - descuento
+            alert(porcentaje + "\nTotal a pagar: $" + total)
+        }else{
+            alert("Ingrese un monto valido")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

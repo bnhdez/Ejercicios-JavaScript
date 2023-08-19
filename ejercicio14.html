@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+    <script>
+        const angulo = parseFloat(prompt("Ingresa el valor del ángulo en grados:"))
+        let mensaje
+
+        if (angulo < 90) {
+        mensaje = "Ángulo agudo"
+        } else if (angulo === 90) {
+        mensaje = "Ángulo recto"
+        } else if (angulo < 180) {
+        mensaje = "Ángulo obtuso"
+        } else if (angulo === 180) {
+        mensaje = "Ángulo llano"
+        } else {
+        mensaje = "Ángulo fuera de rango."
+        }
+
+        alert(mensaje)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

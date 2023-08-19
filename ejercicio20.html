@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+    <script>
+        const numerosPares = []
+
+        // Solicitar al usuario ingresar números pares hasta llenar el vector
+        while (numerosPares.length < 5) {
+        const numero = parseInt(prompt(`Ingresa un número par:`))
+        if (numero % 2 === 0) {
+            numerosPares.push(numero)
+        }
+        }
+
+        alert(`Los números pares ingresados son: ${numerosPares.join(', ')}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

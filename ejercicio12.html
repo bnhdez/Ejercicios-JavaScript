@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+    <script>
+        let cant_l = parseInt(prompt("Ingrese la cantidad de libros"))
+        let libros = []
+
+        if(cant_l < 3){
+            alert("Ingrese una cantidad correcta de libros para aplicar su descuento")
+        }else{
+            for(let i = 1; i <= cant_l; i++){
+            let precio = Number(prompt(`Ingrese el precio del libro ${i}:`))
+            libros.push(precio)
+            }
+
+            let suma = libros.reduce((total, libro) => total + libro, 0)
+            let total_a_pagar
+            let descuento
+            let porcentaje
+
+            if(libros.length == 3){
+                descuento = suma*0.03
+                porcentaje = "Descuento del 3%"
+                console.log("1 " + descuento)
+            }else if(libros.length > 3 && libros.length <= 10){
+                descuento = suma*0.05
+                porcentaje = "Descuento del 5%"
+                console.log("2 " + descuento)
+            }else{
+                descuento = suma*0.1
+                porcentaje = "Descuento del 10%"
+                console.log("3 " + descuento)
+            }
+            total_a_pagar = suma - descuento
+            alert(porcentaje + "\nSu total a pagar es de: $" + total_a_pagar)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

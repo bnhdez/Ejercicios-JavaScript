@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+    <script>
+        const numeros = []
+
+        for (let i = 1; i <= 20; i++) {
+        const numero = parseInt(prompt(`Ingresa el número ${i}:`))
+        numeros.push(numero)
+        }
+
+        // Encontrar el mayor y el menor número
+        let mayor = numeros[0]
+        let menor = numeros[0]
+        let suma = 0
+
+        for (let numero of numeros) {
+        if (numero > mayor) {
+            mayor = numero
+        }
+        if (numero < menor) {
+            menor = numero
+        }
+        suma += numero
+        }
+
+        // Calcular el promedio
+        const promedio = suma / numeros.length
+
+        alert(
+        `Los números ingresados son: ${numeros.join(', ')}\n` +
+        `El mayor número es: ${mayor}\n` +
+        `El menor número es: ${menor}\n` +
+        `El promedio de los números es: ${promedio.toFixed(2)}`
+        )
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

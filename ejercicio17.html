@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+    <script>
+        // Solicitar al usuario ingresar un número
+        const numero = parseInt(prompt("Ingresa un número:"))
+
+        function calcularFactorial(n) {
+        if (n === 0 || n === 1) {
+            return 1
+        } else {
+            return n * calcularFactorial(n - 1)
+        }
+        }
+
+        if (numero < 0) {
+        alert("El factorial no está definido para números negativos.")
+        } else {
+        const factorial = calcularFactorial(numero)
+        alert(`El factorial de ${numero} es: ${factorial}`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

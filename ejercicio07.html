@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+    <script>
+        let numeros = []
+        for (let i = 1; i <= 4; i++) {
+        let numero = parseFloat(prompt(`Ingresa el número ${i}:`))
+        numeros.push(numero)
+        }
+
+        // Calcular la multiplicación
+        let multiplicacion = numeros.reduce((total, numero) => total * numero, 1)
+
+        alert(`El resultado de la multiplicación es: ${multiplicacion}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

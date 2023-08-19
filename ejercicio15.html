@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+    <script>
+        const horasTrabajadas = parseFloat(prompt("Ingresa las horas trabajadas:"))
+        const valorPorHora = parseFloat(prompt("Ingresa el valor por hora:"))
+
+        if (horasTrabajadas < 0 || valorPorHora < 0) {
+            alert("Por favor ingresa valores no negativos.")
+        } else {
+        const salarioBruto = horasTrabajadas * valorPorHora
+        let descuentoSeguridadSocial
+
+        if (horasTrabajadas >= 40) {
+        descuentoSeguridadSocial = salarioBruto * 0.0945
+        } else {
+        descuentoSeguridadSocial = salarioBruto * 0.15
+        }
+        const salarioNeto = salarioBruto - descuentoSeguridadSocial
+
+        alert(`El salario neto a recibir es: $${salarioNeto.toFixed(2)}`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

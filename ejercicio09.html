@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <script>
+        let numero = parseInt(prompt("Ingresa un número entre 1 y 12:"))
+
+        if (numero >= 1 && numero <= 12) {
+        // Definir un arreglo con los nombres de los meses
+        let meses = [
+            "Enero", "Febrero", "Marzo", "Abril",
+            "Mayo", "Junio", "Julio", "Agosto",
+            "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ]
+        let mes = meses[numero - 1]
+        alert(`El mes correspondiente al número ${numero} es: ${mes}`)
+        } else {
+        alert("El número ingresado está fuera del rango válido.")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

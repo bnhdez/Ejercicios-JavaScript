@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19</title>
+    <script>
+        const numeros = []
+
+        for (let i = 1; i <= 10; i++) {
+        const numero = parseFloat(prompt(`Ingresa el número ${i}:`))
+        numeros.push(numero)
+        }
+
+        let suma = 0
+
+        for (let numero of numeros) {
+        suma += numero
+        }
+
+        alert(`La suma de los números es: ${suma}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
